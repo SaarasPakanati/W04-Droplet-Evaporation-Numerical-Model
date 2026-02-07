@@ -127,7 +127,7 @@ for chem_idx = 1:3
         'Color', [0.7 0.0 0.0], 'FontWeight', 'bold');
     hold off;
     ylabel("$\textbf{Vapor Concentration } \mathbf{(ppm)}$", "Interpreter","latex", 'FontName', 'Serif');
-    xlabel("$\textbf{Container Volume } \mathbf{(mL)}$",  "Interpreter","latex", 'FontName', 'Serif');
+    xlabel("$\textbf{Container Volume } \mathbf{(L)}$",  "Interpreter","latex", 'FontName', 'Serif');
     title(sprintf("%s", name),"Interpreter","latex", 'FontName', 'Serif');
     set(gca, 'FontWeight','bold', 'fontsize', 14, 'FontName', 'Serif');
     legend('Location', 'best');
@@ -135,4 +135,5 @@ for chem_idx = 1:3
     grid minor;
     ylim([0 y_max]);
     xlim([0 v_con_max]);
+
 end
